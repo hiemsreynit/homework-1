@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.moulpali-regular {
+  font-family: "Inter", "Moulpali", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width: 1000px) {
+  header {
+    width: 100%;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 120px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+    width: 56px;
+    height: auto;
+  }
+
+  .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .main-heading {
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .course-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px 120px;
+  }
+  .course-item {
+    height: fit-content;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+  }
+  .course-item img {
+    width: 100%;
+    height: auto;
+  }
+  .card-top-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+  }
+  .card-title {
+    padding: 0 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .rating-star {
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .fa-star {
+    color: #ffb400;
+  }
+  .card-top-sec .category-beginner {
+    background-color: #e4fae5;
+    color: #4caf50;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 5px 5px 0 0;
+  }
+  .card-top-sec .category-all-level {
+    background-color: #fadaf8;
+    color: #e232d6;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 5px 5px 0 0;
+  }
+  .fa-heart.fa-solid {
+    font-size: 16px;
+    color: #ff4757;
+    cursor: pointer;
+  }
+  .fa-clock {
+    font-size: 16px;
+    color: red;
+    cursor: pointer;
+  }
+  .fa-calendar {
+    font-size: 16px;
+    color: orange;
+    cursor: pointer;
+  }
+  div {
+    width: 270px;
+    height: 0.5px;
+    background-color: rgb(181, 180, 180);
+    margin: 5px 20px;
+  }
+  .card-bottom-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 20px 20px;
+  }
+
+  footer{
+    width: 100%;
+    background-color: #f8f8f8;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 120px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 120px;
+  }
+  .footer-logo{
+    width: 60%;
+    height: auto;
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .footer-nav{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 24px;
+  }
+  .footer-nav-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .h-3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .footer-nav-item{
+    cursor: pointer;
+    color: #333;
+  }
+}
+
+@media (max-width: 999px) {
+  .course-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px 120px;
+  }
+}
+
+@media (max-width: 599px) {
+  .nav-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
